@@ -12,7 +12,7 @@ public class AirlineReservation extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(AirlineReservation.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        stage.setTitle("CIS3270 Travels");
         stage.setScene(scene);
         stage.show();
     }
