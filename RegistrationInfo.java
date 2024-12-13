@@ -33,6 +33,9 @@ public class RegistrationInfo {
         System.out.print("Enter Social Security Number: ");
         register.setSocialSecNum(scanner.nextLong());
 
+        System.out.print("Security Question: What is yout favorite color?");
+        register.setSecurityQuestionAnswer(scanner.nextLine());
+
         System.out.println(register.toString());
 
 

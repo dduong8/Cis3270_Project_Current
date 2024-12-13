@@ -8,6 +8,8 @@ public class Register {
     private String password;
     private String emailId;
     private long socialSecNum;
+    private String SecurityQuestionAnswer;
+
 
     public String getFirstName() {
         return firstName;
@@ -63,12 +65,15 @@ public class Register {
     public void setSocialSecNum(long socialSecNum) {
         this.socialSecNum = socialSecNum;
     }
+    public String getSecurityQuestionAnswer() {return SecurityQuestionAnswer;}
+    public void setSecurityQuestionAnswer(String SecurityQuestionAnswer) {this.SecurityQuestionAnswer = SecurityQuestionAnswer;}
 
     @Override
     public String toString() {
         return "Register [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address
                 + ", zip=" + zip + ", state=" + state + ", userName=" + userName + ", password=" + password
-                + ", emailId=" + emailId + ", socialSecNum=" + socialSecNum + "]";
+                + ", emailId=" + emailId + ", socialSecNum=" + socialSecNum +
+                ", SecurityQuestionAnswer="+SecurityQuestionAnswer+"]";
     }
 
 
