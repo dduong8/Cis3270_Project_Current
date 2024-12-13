@@ -8,4 +8,6 @@ module org.example.cis3270_project_current {
 
     opens org.example.cis3270_project_current to javafx.fxml;
     exports org.example.cis3270_project_current;
+    exports org.example.cis3270_project_current.Main;
+    opens org.example.cis3270_project_current.Main to javafx.fxml;
 }

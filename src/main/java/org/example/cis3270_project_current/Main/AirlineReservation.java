@@ -1,4 +1,4 @@
-package org.example.cis3270_project_current;
+package org.example.cis3270_project_current.Main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -14,6 +14,7 @@ public class AirlineReservation extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("CIS3270 Travels");
         stage.setScene(scene);
+        stage.setFullScreen(true);
         stage.show();
     }
 
@@ -21,3 +22,4 @@ public class AirlineReservation extends Application {
         launch();
     }
 }
+

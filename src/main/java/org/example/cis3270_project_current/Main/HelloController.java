@@ -1,4 +1,4 @@
-package org.example.cis3270_project_current;
+package org.example.cis3270_project_current.Main;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -12,3 +12,4 @@ public class HelloController {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 }
+
