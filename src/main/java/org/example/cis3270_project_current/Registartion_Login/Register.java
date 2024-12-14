@@ -83,7 +83,7 @@ public class Register {
         return "Register [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address
                 + ", zip=" + zip + ", state=" + state + ", userName=" + userName + ", password=" + password
                 + ", emailId=" + emailId + ", socialSecNum=" + socialSecNum +
-                ", securityQuestionAnswer="+ securityQuestionAnswer]";
+                ", securityQuestionAnswer="+ securityQuestionAnswer;
     }
 
 
