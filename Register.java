@@ -8,7 +8,7 @@ public class Register {
     private String password;
     private String emailId;
     private long socialSecNum;
-    private String SecurityQuestionAnswer;
+    private String securityQuestionAnswer;
 
 
     public String getFirstName() {
@@ -17,63 +17,73 @@ public class Register {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
     public String getLastName() {
         return lastName;
     }
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
     public String getAddress() {
         return address;
     }
     public void setAddress(String address) {
         this.address = address;
     }
+
     public long getZip() {
         return zip;
     }
     public void setZip(long zip) {
         this.zip = zip;
     }
+
     public String getState() {
         return state;
     }
     public void setState(String state) {
         this.state = state;
     }
+
     public String getUserName() {
         return userName;
     }
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
     public String getPassword() {
         return password;
     }
     public void setPassword(String password) {
         this.password = password;
     }
+
     public String getEmailId() {
         return emailId;
     }
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
+
     public long getSocialSecNum() {
         return socialSecNum;
     }
     public void setSocialSecNum(long socialSecNum) {
         this.socialSecNum = socialSecNum;
     }
-    public String getSecurityQuestionAnswer() {return SecurityQuestionAnswer;}
-    public void setSecurityQuestionAnswer(String SecurityQuestionAnswer) {this.SecurityQuestionAnswer = SecurityQuestionAnswer;}
+
+    public String getSecurityQuestionAnswer() {return securityQuestionAnswer;}
+    public void setSecurityQuestionAnswer(String securityQuestionAnswer )
+    {this.securityQuestionAnswer = securityQuestionAnswer;}
 
     @Override
     public String toString() {
         return "Register [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address
                 + ", zip=" + zip + ", state=" + state + ", userName=" + userName + ", password=" + password
                 + ", emailId=" + emailId + ", socialSecNum=" + socialSecNum +
-                ", SecurityQuestionAnswer="+SecurityQuestionAnswer+"]";
+                ", securityQuestionAnswer="+ securityQuestionAnswer]";
     }
 
 
