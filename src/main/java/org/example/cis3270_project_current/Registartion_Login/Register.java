@@ -1,5 +1,3 @@
-package org.example.cis3270_project_current.Registartion_Login;
-
 public class Register {
     private String firstName;
     private String lastName;
@@ -10,6 +8,8 @@ public class Register {
     private String password;
     private String emailId;
     private long socialSecNum;
+    private String SecurityQuestionAnswer;
+
 
     public String getFirstName() {
         return firstName;
@@ -65,12 +65,15 @@ public class Register {
     public void setSocialSecNum(long socialSecNum) {
         this.socialSecNum = socialSecNum;
     }
+    public String getSecurityQuestionAnswer() {return SecurityQuestionAnswer;}
+    public void setSecurityQuestionAnswer(String SecurityQuestionAnswer) {this.SecurityQuestionAnswer = SecurityQuestionAnswer;}
 
     @Override
     public String toString() {
-        return "org.example.cis3270_project_current.Registartion_Login.Register [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address
+        return "Register [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address
                 + ", zip=" + zip + ", state=" + state + ", userName=" + userName + ", password=" + password
-                + ", emailId=" + emailId + ", socialSecNum=" + socialSecNum + "]";
+                + ", emailId=" + emailId + ", socialSecNum=" + socialSecNum +
+                ", SecurityQuestionAnswer="+SecurityQuestionAnswer+"]";
     }
 
 
