@@ -4,6 +4,7 @@ package org.example.cis3270_project_current.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -14,10 +15,11 @@ public class SceneController  {
     // Switch between pages (scenes)
     private Stage stage;
     private Scene scene;
+    private Parent root;
 
     public void switchToRegisterPage(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(AirlineReservation.class.getResource("register-page.fxml"));
-        stage = ((Stage)(Node)event.getSource()).getScene().getWindow();
+        // stage = ((Stage)(Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
@@ -25,7 +27,7 @@ public class SceneController  {
 
     public void switchToLoginPage(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(AirlineReservation.class.getResource("login-page.fxml"));
-        stage = ((Stage)(Node)event.getSource()).getScene().getWindow();
+        // stage = ((Stage)(Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
@@ -33,7 +35,7 @@ public class SceneController  {
 
     public void switchToMainPage(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(AirlineReservation.class.getResource("main-menu.fxml"));
-        stage = ((Stage)(Node)event.getSource()).getScene().getWindow();
+        // stage = ((Stage)(Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();

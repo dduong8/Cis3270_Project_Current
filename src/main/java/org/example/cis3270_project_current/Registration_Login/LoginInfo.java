@@ -1,4 +1,4 @@
-package org.example.cis3270_project_current.Registartion_Login;
+package org.example.cis3270_project_current.Registration_Login;
 
 import java.util.Scanner;
 

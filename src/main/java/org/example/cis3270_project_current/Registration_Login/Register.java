@@ -1,3 +1,5 @@
+package org.example.cis3270_project_current.Registration_Login;
+
 public class Register {
     private String firstName;
     private String lastName;
