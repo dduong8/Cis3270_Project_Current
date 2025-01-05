@@ -7,7 +7,7 @@ public class FlightInfo {
     private String departureCity;
     private String arrivalCity;
     private String passengerName;
-    private String ReturnFlight;
+    private String returnFlight;
 
     //constructor to initialize flightnum, flightdate, ect.
     public FlightInfo(String flightNum,String flightDate, String flightTime, String departureCity,
@@ -18,7 +18,7 @@ public class FlightInfo {
         this.departureCity = departureCity;
         this.arrivalCity = arrivalCity;
         this.passengerName = passengerName;
-        this.ReturnFlight = returnFlight;
+        this.returnFlight = returnFlight;
 
     }
     public String getFlightNum() {
@@ -58,10 +58,10 @@ public class FlightInfo {
         this.passengerName = passengerName;
     }
     public String getReturnFlight() {
-        return ReturnFlight;
+        return returnFlight;
     }
     public void setReturnFlight(String returnFlight) {
-        ReturnFlight = returnFlight;
+        this.returnFlight = returnFlight;
     }
     @Override
     public String toString() {
