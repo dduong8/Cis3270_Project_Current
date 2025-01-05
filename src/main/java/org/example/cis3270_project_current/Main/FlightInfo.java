@@ -63,6 +63,12 @@ public class FlightInfo {
     public void setReturnFlight(String returnFlight) {
         ReturnFlight = returnFlight;
     }
+    @Override
+    public String toString() {
+        return "FlightInfo [flightNum=" + flightNum + ", flightDate=" + flightDate+
+                ", flightTime=" + flightTime + ", departureCity=" + departureCity + ", arrivalCity="
+                + arrivalCity;
+    }
 
 
 
