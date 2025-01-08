@@ -19,7 +19,8 @@ public class Register {
 
     }
 
-
+    public Register(String userName, String password, String firstName, String lastName, int zip, String state, String emailId, int socialSecNum, String securityQuestionAnswer) {
+    }
 
 
     public String getFirstName() {
