@@ -1,5 +1,9 @@
 package org.example.cis3270_project_current.Registration_Login;
 
+import java.util.Random;
+
+
+
 public class Register {
     private String firstName;
     private String lastName;
@@ -10,6 +14,7 @@ public class Register {
     private String password;
     private String emailId;
     private int socialSecNum;
+    private int accountID;
     private String securityQuestionAnswer;
     public static boolean isAdminAccount = false;
 
@@ -19,7 +24,19 @@ public class Register {
 
     }
 
-    public Register(String userName, String password, String firstName, String lastName, int zip, String state, String emailId, int socialSecNum, String securityQuestionAnswer) {
+    public Register(String userName, String password, String firstName, String lastName, int zip, String state, String emailId,
+                    int socialSecNum, String securityQuestionAnswer,int accountID) {
+
+        this.userName = userName;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.zip = zip;
+        this.state = state;
+        this.emailId = emailId;
+        this.socialSecNum = socialSecNum;
+        this.securityQuestionAnswer = securityQuestionAnswer;
+        this.accountID = accountID;
     }
 
 
@@ -44,7 +61,7 @@ public class Register {
         this.address = address;
     }
 
-    public long getZip() {
+    public int getZip() {
         return zip;
     }
     public void setZip(int zip) {
@@ -79,16 +96,29 @@ public class Register {
         this.emailId = emailId;
     }
 
-    public long getSocialSecNum() {
+    public int getSocialSecNum() {
         return socialSecNum;
     }
     public void setSocialSecNum(int socialSecNum) {
         this.socialSecNum = socialSecNum;
     }
 
+    public int getAccountID() {return accountID;}
+
+    public static int generateAccountID(){
+        Random rand = new Random();
+        int ID = rand.nextInt(99999);
+        return ID;
+
+    }
+    public void setAccountID(int accountID) {this.accountID = accountID;}
+
     public String getSecurityQuestionAnswer() {return securityQuestionAnswer;}
     public void setSecurityQuestionAnswer(String securityQuestionAnswer )
     {this.securityQuestionAnswer = securityQuestionAnswer;}
+
+
+
 
     @Override
     public String toString() {
