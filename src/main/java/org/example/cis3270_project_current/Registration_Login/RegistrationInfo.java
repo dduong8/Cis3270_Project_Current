@@ -20,6 +20,8 @@ public class RegistrationInfo {
         System.out.println("Enter ZIP Code: ");
         register.setZip (scanner.nextLong());
 
+        scanner.nextLine();
+
         System.out.println("Enter State");
         register.setState (scanner.nextLine());
 
@@ -34,6 +36,8 @@ public class RegistrationInfo {
 
         System.out.print("Enter Social Security Number: ");
         register.setSocialSecNum(scanner.nextLong());
+
+        scanner.nextLine();
 
         System.out.println(register.toString());
 

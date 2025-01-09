@@ -5,7 +5,7 @@ public class Administrator extends Register {
     public final static Boolean isAdminAccount = true;
 
     public Administrator(String username, String password) {
-        super(username ,password);
+        super();
     }
     public Administrator(String userName, String password, String firstName, String lastName,
     int zip,String state,String emailId,int socialSecNum,String securityQuestionAnswer ) {
