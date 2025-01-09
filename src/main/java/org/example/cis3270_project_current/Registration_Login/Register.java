@@ -4,13 +4,23 @@ public class Register {
     private String firstName;
     private String lastName;
     private String address;
-    private long zip;
+    private int zip;
     private String state;
     private String userName;
     private String password;
     private String emailId;
-    private long socialSecNum;
+    private int socialSecNum;
     private String securityQuestionAnswer;
+    public static boolean isAdminAccount = false;
+
+    public Register(String Username, String Password) {
+        this.userName = Username;
+        this.password = Password;
+
+    }
+
+    public Register(String userName, String password, String firstName, String lastName, int zip, String state, String emailId, int socialSecNum, String securityQuestionAnswer) {
+    }
 
 
     public String getFirstName() {
@@ -37,7 +47,7 @@ public class Register {
     public long getZip() {
         return zip;
     }
-    public void setZip(long zip) {
+    public void setZip(int zip) {
         this.zip = zip;
     }
 
@@ -72,7 +82,7 @@ public class Register {
     public long getSocialSecNum() {
         return socialSecNum;
     }
-    public void setSocialSecNum(long socialSecNum) {
+    public void setSocialSecNum(int socialSecNum) {
         this.socialSecNum = socialSecNum;
     }
 
