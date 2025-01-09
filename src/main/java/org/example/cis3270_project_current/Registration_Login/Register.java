@@ -88,10 +88,4 @@ public class Register {
                 ", securityQuestionAnswer="+ securityQuestionAnswer;
     }
 
-
-
-
-
-
-
 }
