@@ -23,4 +23,3 @@ public class AirlineReservation extends Application {
         launch();
     }
 }
-

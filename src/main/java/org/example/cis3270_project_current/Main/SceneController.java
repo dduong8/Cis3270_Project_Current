@@ -1,6 +1,5 @@
 package org.example.cis3270_project_current.Main;
 
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
