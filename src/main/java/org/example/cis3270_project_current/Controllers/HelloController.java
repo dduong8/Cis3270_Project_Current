@@ -1,4 +1,4 @@
-package org.example.cis3270_project_current.Main;
+package org.example.cis3270_project_current.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
