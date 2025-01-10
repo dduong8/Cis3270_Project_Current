@@ -17,4 +17,9 @@ public class LoginPageController {
 
     }
 
+    @FXML
+    void onForgotPassClick(ActionEvent event) throws IOException {
+        new SceneController(LoginPageAnchor, "ForgotPassPage.fxml");
+    }
+
 }
