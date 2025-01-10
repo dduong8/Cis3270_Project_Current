@@ -15,6 +15,7 @@ public class Register {
     private String emailId;
     private int socialSecNum;
     private int accountID;
+    private String securityQuestion;
     private String securityQuestionAnswer;
     public static boolean isAdminAccount = false;
 
@@ -35,6 +36,7 @@ public class Register {
         this.state = state;
         this.emailId = emailId;
         this.socialSecNum = socialSecNum;
+        this.securityQuestion= securityQuestion;
         this.securityQuestionAnswer = securityQuestionAnswer;
         this.accountID = accountID;
     }
@@ -112,6 +114,9 @@ public class Register {
 
     }
     public void setAccountID(int accountID) {this.accountID = accountID;}
+
+    public String getSecurityQuestion() {return securityQuestion;}
+    public void setSecurityQuestion(String securityQuestion) {this.securityQuestion = securityQuestion;}
 
     public String getSecurityQuestionAnswer() {return securityQuestionAnswer;}
     public void setSecurityQuestionAnswer(String securityQuestionAnswer )
