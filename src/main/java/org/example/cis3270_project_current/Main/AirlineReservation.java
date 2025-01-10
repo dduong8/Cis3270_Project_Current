@@ -15,7 +15,7 @@ public class AirlineReservation extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("CIS3270 Travels");
         stage.setScene(scene);
-        stage.setFullScreen(true);
+        // stage.setFullScreen(true);
         stage.show();
     }
 

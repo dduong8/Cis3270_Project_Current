@@ -10,4 +10,6 @@ module org.example.cis3270_project_current {
     exports org.example.cis3270_project_current.Registration_Login;
     exports org.example.cis3270_project_current.Main;
     opens org.example.cis3270_project_current.Main to javafx.fxml;
+    exports org.example.cis3270_project_current.Controllers;
+    opens org.example.cis3270_project_current.Controllers to javafx.fxml;
 }
