@@ -26,7 +26,7 @@ public class Register {
     }
 
     public Register(String userName, String password, String firstName, String lastName, int zip, String state, String emailId,
-                    int socialSecNum, String securityQuestionAnswer,int accountID) {
+                    int socialSecNum,String securityQuestion, String securityQuestionAnswer,int accountID) {
 
         this.userName = userName;
         this.password = password;
@@ -36,7 +36,7 @@ public class Register {
         this.state = state;
         this.emailId = emailId;
         this.socialSecNum = socialSecNum;
-        this.securityQuestion= securityQuestion;
+        this.securityQuestion = securityQuestion;
         this.securityQuestionAnswer = securityQuestionAnswer;
         this.accountID = accountID;
     }
