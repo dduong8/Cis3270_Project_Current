@@ -1,3 +1,4 @@
+
 package org.example.cis3270_project_current.Registration_Login;
 
 import java.util.Scanner;
@@ -45,3 +46,4 @@ public class RegistrationInfo {
     }
 
 }
+
