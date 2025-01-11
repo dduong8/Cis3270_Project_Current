@@ -4,20 +4,24 @@ public class BookFlight {
     private int flightNum;
     private int ticketNum;
     private String flightDate;
-    private String flightTime;
+    private String flightArrivalTime;
+    private String flightDepartureTime;
     private String departureCity;
-    private String arrivalCity;
+    private String destinationCity;
     private String returnFlight;
+    private int accountID;
 
-    public BookFlight(int flightNum,int ticketNum, String flightDate, String flightTime,  String departureCity,
-                      String arrivalCity, String returnFlight) {
+    public BookFlight(int flightNum, int ticketNum, String flightDate, String flightArrivalTime,String flightDepartureTime, String departureCity,
+                      String arrivalCity, String returnFlight,int accountID) {
         this.flightNum = flightNum;
         this.ticketNum = ticketNum;
         this.flightDate = flightDate;
-        this.flightTime = flightTime;
+        this.flightArrivalTime = flightArrivalTime;
+        this.flightDepartureTime = flightDepartureTime;
         this.departureCity = departureCity;
-        this.arrivalCity = arrivalCity;
+        this.destinationCity = arrivalCity;
         this.returnFlight = returnFlight;
+        this.accountID = accountID;
 
     }
     public int getFlightNum() {
@@ -38,30 +42,41 @@ public class BookFlight {
     public void setFlightDate(String flightDate) {
         this.flightDate = flightDate;
     }
-    public String getFlightTime() {
-        return flightTime;
+
+    public String getFlightArrivalTime() {
+        return flightArrivalTime;
     }
-    public void setFlightTime(String flightTime) {
-        this.flightTime = flightTime;
+    public void setFlightArrivalTime(String flightArrivalTime) {
+        this.flightArrivalTime = flightArrivalTime;
     }
+
+    public String getFlightDepartureTime() {return flightDepartureTime;}
+    public void setFlightDepartureTime(String flightDepartureTime) {
+        this.flightDepartureTime = flightDepartureTime;}
+
     public String getDepartureCity() {
         return departureCity;
     }
     public void setDepartureCity(String departureCity) {
         this.departureCity = departureCity;
     }
-    public String getArrivalCity() {
-        return arrivalCity;
+
+    public String getDestinationCity() {
+        return destinationCity;
     }
-    public void setArrivalCity(String arrivalCity) {
-        this.arrivalCity = arrivalCity;
+    public void setDestinationCity(String destinationCity) {
+        this.destinationCity = destinationCity;
     }
+
     public String getReturnFlight() {
         return returnFlight;
     }
     public void setReturnFlight(String returnFlight) {
         this.returnFlight = returnFlight;
     }
+
+    public int getAccountID() {return accountID;}
+    public void setAccountID(int accountID) {this.accountID = accountID;}
 
 }
 

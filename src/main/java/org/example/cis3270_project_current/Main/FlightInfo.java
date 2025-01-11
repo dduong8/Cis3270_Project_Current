@@ -1,28 +1,37 @@
 package org.example.cis3270_project_current.Main;
 
+import java.util.Random;
+
 public class FlightInfo {
     private String flightNum;
     private String flightDate;
-    private String flightTime;
+    private String flightArrivalTime;
+    private String flightDepartureTime;
     private String departureCity;
-    private String arrivalCity;
+    private String destinationCity;
     private String passengerName;
     private String returnFlight;
 
     //constructor to initialize flightnum, flightdate, ect.
-    public FlightInfo(String flightNum,String flightDate, String flightTime, String departureCity,
-                      String arrivalCity, String passengerName, String returnFlight) {
+    public FlightInfo(String flightNum, String flightDate, String flightArrivalTime,String flightDepartureTime, String departureCity,
+                      String destinationCity, String passengerName, String returnFlight) {
         this.flightNum = flightNum;
         this.flightDate = flightDate;
-        this.flightTime = flightTime;
+        this.flightArrivalTime = flightArrivalTime;
+        this.flightDepartureTime = flightDepartureTime;
         this.departureCity = departureCity;
-        this.arrivalCity = arrivalCity;
+        this.destinationCity = destinationCity;
         this.passengerName = passengerName;
         this.returnFlight = returnFlight;
 
     }
     public String getFlightNum() {
         return flightNum;
+    }
+    public static int generateFlightNum() {
+        Random rand = new Random();
+        int ID = rand.nextInt(10000);
+        return ID;
     }
     public void setFlightNum(String flightNum) {
         this.flightNum = flightNum;
@@ -33,11 +42,17 @@ public class FlightInfo {
     public void setFlightDate(String flightDate) {
         this.flightDate = flightDate;
     }
-    public String getFlightTime() {
-        return flightTime;
+    public String getFlightArrivalTime() {
+        return flightArrivalTime;
     }
-    public void setFlightTime(String flightTime) {
-        this.flightTime = flightTime;
+    public void setFlightArrivalTime(String flightArrivalTime) {
+        this.flightArrivalTime = flightArrivalTime;
+    }
+    public String getFlightDepartureTime() {
+        return flightDepartureTime;
+    }
+    public void setFlightDepartureTime(String flightDepartureTime) {
+        this.flightDepartureTime = flightDepartureTime;
     }
     public String getDepartureCity() {
         return departureCity;
@@ -45,11 +60,11 @@ public class FlightInfo {
     public void setDepartureCity(String departureCity) {
         this.departureCity = departureCity;
     }
-    public String getArrivalCity() {
-        return arrivalCity;
+    public String getDestinationCity() {
+        return destinationCity;
     }
-    public void setArrivalCity(String arrivalCity) {
-        this.arrivalCity = arrivalCity;
+    public void setDestinationCity(String destinationCity) {
+        this.destinationCity = destinationCity;
     }
     public String getPassengerName() {
         return passengerName;
@@ -66,8 +81,8 @@ public class FlightInfo {
     @Override
     public String toString() {
         return "FlightInfo [flightNum=" + flightNum + ", flightDate=" + flightDate+
-                ", flightTime=" + flightTime + ", departureCity=" + departureCity + ", arrivalCity="
-                + arrivalCity;
+                ", flightArrivalTime=" + flightArrivalTime + ",flightDepartureTime="+flightDepartureTime+ ", departureCity=" + departureCity + ", destinationCity="
+                + destinationCity;
     }
 
 
