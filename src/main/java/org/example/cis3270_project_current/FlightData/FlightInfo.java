@@ -1,33 +1,32 @@
-package org.example.cis3270_project_current.Main;
+package org.example.cis3270_project_current.FlightData;
 
 import java.util.Random;
+import org.example.cis3270_project_current.DB.DBInsertInfo;
 
 public class FlightInfo {
-    private String flightNum;
+    private int flightNum;
     private String flightDate;
     private String flightArrivalTime;
     private String flightDepartureTime;
     private String departureCity;
     private String destinationCity;
-    private String passengerName;
     private String returnFlight;
     private int numberOfSeats;
 
     //constructor to initialize flightnum, flightdate, ect.
-    public FlightInfo(String flightNum, String flightDate, String flightArrivalTime,String flightDepartureTime, String departureCity,
-                      String destinationCity, String passengerName, String returnFlight, int numberOfSeats) {
+    public FlightInfo(int flightNum, String flightDate, String flightArrivalTime,String flightDepartureTime, String departureCity,
+                      String destinationCity, String returnFlight, int numberOfSeats) {
         this.flightNum = flightNum;
         this.flightDate = flightDate;
         this.flightArrivalTime = flightArrivalTime;
         this.flightDepartureTime = flightDepartureTime;
         this.departureCity = departureCity;
         this.destinationCity = destinationCity;
-        this.passengerName = passengerName;
         this.returnFlight = returnFlight;
         this.numberOfSeats = numberOfSeats;
 
     }
-    public String getFlightNum() {
+    public int getFlightNum() {
         return flightNum;
     }
     public static int generateFlightNum() {
@@ -41,7 +40,7 @@ public class FlightInfo {
 
 
 
-    public void setFlightNum(String flightNum) {
+    public void setFlightNum(int flightNum) {
         this.flightNum = flightNum;
     }
     public String getFlightDate() {
@@ -73,12 +72,6 @@ public class FlightInfo {
     }
     public void setDestinationCity(String destinationCity) {
         this.destinationCity = destinationCity;
-    }
-    public String getPassengerName() {
-        return passengerName;
-    }
-    public void setPassengerName(String passengerName) {
-        this.passengerName = passengerName;
     }
     public String getReturnFlight() {
         return returnFlight;

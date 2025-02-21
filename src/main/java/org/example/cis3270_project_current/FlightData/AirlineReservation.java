@@ -1,8 +1,7 @@
-package org.example.cis3270_project_current.Main;
+package org.example.cis3270_project_current.FlightData;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 

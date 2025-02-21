@@ -1,4 +1,4 @@
-package org.example.cis3270_project_current.Main;
+package org.example.cis3270_project_current.FlightData;
 
 public class BookFlight {
     private int flightNum;
