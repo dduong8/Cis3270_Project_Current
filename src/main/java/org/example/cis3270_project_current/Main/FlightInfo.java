@@ -11,10 +11,11 @@ public class FlightInfo {
     private String destinationCity;
     private String passengerName;
     private String returnFlight;
+    private int numberOfSeats;
 
     //constructor to initialize flightnum, flightdate, ect.
     public FlightInfo(String flightNum, String flightDate, String flightArrivalTime,String flightDepartureTime, String departureCity,
-                      String destinationCity, String passengerName, String returnFlight) {
+                      String destinationCity, String passengerName, String returnFlight, int numberOfSeats) {
         this.flightNum = flightNum;
         this.flightDate = flightDate;
         this.flightArrivalTime = flightArrivalTime;
@@ -23,6 +24,7 @@ public class FlightInfo {
         this.destinationCity = destinationCity;
         this.passengerName = passengerName;
         this.returnFlight = returnFlight;
+        this.numberOfSeats = numberOfSeats;
 
     }
     public String getFlightNum() {
@@ -33,6 +35,12 @@ public class FlightInfo {
         int ID = rand.nextInt(10000);
         return ID;
     }
+
+
+
+
+
+
     public void setFlightNum(String flightNum) {
         this.flightNum = flightNum;
     }
@@ -78,6 +86,9 @@ public class FlightInfo {
     public void setReturnFlight(String returnFlight) {
         this.returnFlight = returnFlight;
     }
+    public void setNumberOfSeats(int numberOfSeats) {this.numberOfSeats = numberOfSeats;}
+    public int getNumberOfSeats() {return numberOfSeats;}
+
     @Override
     public String toString() {
         return "FlightInfo [flightNum=" + flightNum + ", flightDate=" + flightDate+
