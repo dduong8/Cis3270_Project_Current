@@ -8,9 +8,9 @@ public class RecoverPassword {
         String userName = sc.nextLine();
 
         System.out.print("Security question: What is your favorite color? ");
-        String SecurityQuestionAnswer = sc.nextLine();
+        String securityQuestionAnswer = sc.nextLine();
 
-        if (userName.equals(userName) && SecurityQuestionAnswer.equals(SecurityQuestionAnswer)) {
+        if (userName.equals(userName) && securityQuestionAnswer.equals(securityQuestionAnswer)) {
             System.out.println("You are logged in!");
         } else {
             System.out.println("Incorrect username or password!");
