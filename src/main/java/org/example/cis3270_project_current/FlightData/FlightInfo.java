@@ -26,6 +26,11 @@ public class FlightInfo {
         this.numberOfSeats = numberOfSeats;
 
     }
+
+    public FlightInfo() {
+
+    }
+
     public int getFlightNum() {
         return flightNum;
     }
