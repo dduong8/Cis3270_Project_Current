@@ -4,7 +4,7 @@ import java.util.Random;
 
 
 
-public class Register {
+public class RegisterAccount {
     private String firstName;
     private String lastName;
     private String address;
@@ -19,14 +19,14 @@ public class Register {
     private String securityQuestionAnswer;
     public static boolean isAdminAccount = false;
 
-    public Register(String Username, String Password) {
+    public RegisterAccount(String Username, String Password) {
         this.userName = Username;
         this.password = Password;
 
     }
 
-    public Register(String userName, String password, String firstName, String lastName, int zip, String state, String emailId,
-                    int socialSecNum,String securityQuestion, String securityQuestionAnswer,int accountID) {
+    public RegisterAccount(String userName, String password, String firstName, String lastName, int zip, String state, String emailId,
+                           int socialSecNum, String securityQuestion, String securityQuestionAnswer, int accountID) {
 
         this.userName = userName;
         this.password = password;

@@ -1,6 +1,6 @@
 package org.example.cis3270_project_current.Registration_Login;
 
-public class Administrator extends Register {
+public class Administrator extends RegisterAccount {
 
     public final static Boolean isAdminAccount = true;
 

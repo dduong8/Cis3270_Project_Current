@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 import org.example.cis3270_project_current.FlightData.BookFlight;
 import org.example.cis3270_project_current.FlightData.FlightInfo;
+import org.example.cis3270_project_current.Registration_Login.RegisterAccount;
 
 public class DBInsertInfo {
 
@@ -16,6 +17,57 @@ public class DBInsertInfo {
 
     public static boolean success;
     public ArrayList<Object> returnList;
+
+
+
+
+// Add account to database
+    public static void addAccount(RegisterAccount registerAccount){
+        success = false;
+        try{
+            Class.forName("java.sql.Driver");
+            System.out.println("Successfully Connected to database");
+
+            Connection connection = DriverManager.getConnection(dbUser, dbPass, url);
+
+            String sqlQuery = "INSERT INTO account(first_name, last_name ,address,zip, state, username, " +
+                    "email_id, social_sec_Num, account_id, security_question, security_answer" +
+                    "is_Admin_Account )" + " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+
+            PreparedStatement prepStatement = connection.prepareStatement(sqlQuery);
+
+            prepStatement.setString(1, registerAccount.getFirstName());
+            prepStatement.setString(2, registerAccount.getLastName());
+            prepStatement.setString(3, registerAccount.getAddress());
+            prepStatement.setInt(4, registerAccount.getZip());
+            prepStatement.setString(5, registerAccount.getState());
+            prepStatement.setString(6, registerAccount.getUserName());
+            prepStatement.setString(7, registerAccount.getEmailId());
+            prepStatement.setInt(8,registerAccount.getSocialSecNum());
+            prepStatement.setInt(9,registerAccount.getAccountID());
+            prepStatement.setString(10, registerAccount.getSecurityQuestion());
+            prepStatement.setString(11, registerAccount.getSecurityQuestionAnswer());
+            prepStatement.setBoolean(12,registerAccount.isAdminAccount);
+
+
+
+            prepStatement.executeUpdate();
+            connection.close();
+            success = true;
+
+
+
+        } catch (SQLIntegrityConstraintViolationException e) {
+            System.out.println("An account with this email already exists");
+            e.printStackTrace();
+            success = false;
+        }catch (Exception e){
+            System.out.println("An error has occurred in the database");
+        }
+
+
+    }
+
 
 
 
@@ -111,6 +163,7 @@ public class DBInsertInfo {
         }catch (ClassNotFoundException e3) {
             e3.printStackTrace();
         }
+
     }
 
 }

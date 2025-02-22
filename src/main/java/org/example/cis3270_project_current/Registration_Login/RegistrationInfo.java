@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RegistrationInfo {
     public static void main(String[] args) {
 
-        Register register = new Register();
+        RegisterAccount register = new RegisterAccount();
 
         Scanner scanner = new Scanner(System.in);
 
